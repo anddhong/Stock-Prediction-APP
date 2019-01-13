@@ -1,0 +1,21 @@
+<!doctype html>
+
+{% extends 'htmlTemplate.html' %}
+
+{% block body %}
+	<div class='jumbotron text-center'>
+	<h1> {{ticker}} </h1>
+	{% if works == False %}
+		<p1>{{model}}</p1>
+	{% else %}
+		<p1 class='lead'> {{model}} </p1> <br>
+	
+		<p1 class='lead'> {{'Model Accuracy : ' + model[0]|string}} </p1> <br>
+		<p1 class='lead'> {{'Features Used : ' + model[1]|string}} </p1><br>
+		<p1 class='lead'> {{'Prediction Rate = %d / %d = %.8f' % (model[2], model[3], model[2]/model[3])}} </p1> <br>
+		<br>
+	{% endif %}
+
+	</div>
+
+{% endblock %}

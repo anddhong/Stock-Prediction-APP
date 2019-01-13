@@ -1,0 +1,10 @@
+<!doctype html>
+
+{% extends 'htmlTemplate.html' %}
+
+{% block body %}
+	<div class='container'>
+	<h1>{{ticker}} Stock Info </h1>
+	{{stock_info | safe}}
+	</div>
+{% endblock %}

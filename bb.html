@@ -1,0 +1,95 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../../../../favicon.ico">
+
+	<title>bb Template</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="form-validation.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+    <div class="container">
+      <div class="py-5 text-center">
+        <h2>Templating Form</h2>  
+        <p class="lead">Below is the template for how the video and audio analysis is presented. This template follows the popular python templating language Jinja2, whose documentation can be found <a href='http://jinja.pocoo.org/docs/2.10/'>here</a>.</p>
+      </div>
+
+      		<div class="row">
+			  <div class="col-md-5 mb-3">
+				<label for="country">Category</label>
+				<select class="custom-select d-block w-100" id="country" required>
+				  <option value="">English</option>
+				  <option>Chinese</option>
+				</select>
+			   </div>
+
+			   <div class="col-md-5 mb-3">
+				<label for="country">cmt_type</label>
+				<select class="custom-select d-block w-100" id="country" required>
+				  <option value="">English</option>
+				  <option>Chinese</option>
+				</select>
+			   </div>
+
+			 <div class="col-md-5 mb-3">
+				<label for="country">sub_id</label>
+				<select class="custom-select d-block w-100" id="country" required>
+				  <option value="">English</option>
+				  <option>Chinese</option>
+				</select>
+			 </div>
+			 </div>
+
+
+			<div class="mb-3">
+			  <label for="email">Chinese Template <span class="text-muted">({{category}})</span></label>
+			  <textarea type="email" class="form-control" id="email" rows="6">{{cmt_temp_cn}}</textarea>
+			</div>
+
+			<div class="mb-3">
+			  <label for="address">English Template</label>
+			  <textarea type="text" class="form-control" id="address" placeholder="Gold Price"  rows="6" required>{{cmt_temp_en}}</textarea>
+			  </div>
+			
+
+			<div class="mb-3">
+			  <label for="address2">Note</label>
+			  <textarea type="text" class="form-control" id="address2" rows="6">{{note}}</textarea>
+			</div>
+
+			<hr class="mb-4">
+			<div class="custom-control custom-checkbox">
+			  <input type="checkbox" class="custom-control-input" id="save-info">
+			  <label class="custom-control-label" for="save-info">Save this information for next time</label>
+			</div>
+
+
+			<hr class="mb-4">
+			<button class="btn btn-primary btn-lg btn-block" type="submit">Save</button>
+		</div>
+		</div>
+	  </div>
+
+	  <footer class="my-5 pt-5 text-muted text-center text-small">
+		<p class="mb-1">&copy; BeyondBond Inc</p>
+		<ul class="list-inline">
+		  <li class="list-inline-item"><a href="#">Privacy</a></li>
+		  <li class="list-inline-item"><a href="#">Terms</a></li>
+		  <li class="list-inline-item"><a href="#">Support</a></li>
+		</ul>
+	  </footer>
+	</div>
+
+	
+  </body>
+</html>
